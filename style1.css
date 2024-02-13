@@ -1,0 +1,670 @@
+*{margin: 0;padding: 0} 
+
+/* navbar section start*/
+
+ .navbar{
+ 	background-color: rgb(17, 18, 31);
+ 	display: flex;
+ 	color: white;
+ 	justify-content: space-between;
+ 	padding: 10px 100px;
+ 	align-items: center;
+ }
+ .navbar-logo>img{
+ 	height: 60px;
+ 	width: 120px;
+ }
+  .navbar-logo>img:hover{
+  	opacity: 0.1; 
+ }
+
+ .nav-links>ul>li{
+ 	display: inline;
+ 	margin: 0 15px;
+ 	font-size: 18px;
+ 	font-weight: 500;
+ 	color: magenta;
+ }
+
+  .nav-links>ul>li:hover{
+ 	color: white;
+    cursor: pointer;
+ }
+
+ .main-btn{
+ 	padding: 20px 20px;
+ 	background-image: linear-gradient(to bottom,#D88CE9,#3FD3EF);
+ 	border-radius: 42px;
+ 	animation-name: btnAni;
+ 	animation-duration: 0.4s;
+ 	animation-iteration-count: infinite;
+ 	animation-timing-function: linear;
+ 	animation-direction: reverse;
+    
+    
+ }
+ 
+ @keyframes btnAni{
+   0%{
+    background-image: linear-gradient(to top,red,blue);
+   }
+   33.34%{
+   	 background-image: linear-gradient(to right,blue,red);
+   }
+   66.86%{
+   	 background-image: linear-gradient(to bottom,red,blue);
+   }
+   100%{
+   	 background-image: linear-gradient(to left,blue,red);
+   }
+   
+ }
+
+ .main-btn>a{
+ 	font-size: 18px;
+ 	text-decoration: none;
+ 	color: white;
+ }
+
+
+/* banner section start*/
+
+.banner{
+	background-color: #0E1422;
+	color: white;
+	display: flex;
+	justify-content: space-evenly;
+	position: relative;
+}
+.banner-left{ 
+	 margin-top: 210px;
+}
+.banner-left>h5{
+	 font-size: 18px;
+}
+.banner-left>h2{
+	 color: #D88CF9;
+	 margin: 30px 0px 50px 0px;
+	 font-size: 40px;
+	 animation-name: changeColor;
+	 animation-iteration-count: infinite;
+	 animation-duration: 5s;
+     animation-timing-function:linear;
+}
+
+@keyframes changeColor{
+	0%{
+		color: #D88CF9; 
+	}
+	25%{
+		color: red;
+	}
+	50%{
+		color: green;
+	}
+	75%{
+		color: white;
+	}
+	100%{
+		color: #D88CF9;
+	}
+
+}
+
+.ban-btn{
+	width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-right>img{
+	width: 600px; 
+    
+}
+
+
+
+/*about section start*/
+
+.AboutSection{
+	display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+     
+}
+.about-rightm{
+	width: 500px;
+	margin-top: 50px;
+}
+
+.about-leftm img{
+	width: 600px;
+}
+
+.about-rightm>hr{
+   margin-left: 107px;
+   width: 190px;
+   height: 10px; 
+   margin-bottom: 30px;
+   margin-top: 5px;
+   border-radius: 5px;
+   background-color: red;
+}
+.about-rightm>h3{
+	font-size: 28px;
+	letter-spacing: 5px;
+}
+.about-rightm>p{
+	text-align: justify;
+	font-size: 25px;
+}
+
+
+/*WHO WE ARE SECTION START*/
+
+
+.WhoSection{
+	display: flex;
+    justify-content: space-evenly; 
+}
+
+.Who-leftm{
+	margin-left: 30px;
+	width: 500px;
+}
+.who-rightm img{
+	width: 600px;
+
+}
+.Who-leftm h3{
+	margin-top: 50px;
+	font-size: 28px;
+	letter-spacing: 5px;
+}
+
+.Who-leftm hr{ 
+   width: 190px;
+   height: 10px; 
+   margin-bottom: 30px;
+   margin-top: 5px;
+   border-radius: 5px;
+   background-color: red;
+   margin-left: 125px;
+}
+.Who-leftm>p{
+	text-align: justify;
+	font-size: 25px;
+}
+
+
+/*Mission SECTION START*/
+
+.MissioSection{
+	display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px; 
+    margin-bottom: 30px;
+    margin-left: -12px;
+}
+.mission-leftm img{
+	width: 520px;
+	margin-left: -40px;
+}
+
+.mission-rightm{
+	width: 500px;
+	margin-top: 50px;
+	margin-right: -60px;
+}
+.mission-rightm>hr{
+   margin-left: 125px;
+   width: 200px;
+   height: 10px; 
+   margin-bottom: 30px;
+   margin-top: 5px;
+   border-radius: 5px;
+   background-color: red;
+}
+.mission-rightm>h3{
+	font-size: 28px;
+	letter-spacing: 5px;
+}
+.mission-rightm>p{
+	text-align: justify;
+	font-size: 25px;
+}
+
+
+
+
+/*connected section*/
+.ConneSctio{
+	display: flex;
+	justify-content: space-evenly;
+	background-image: linear-gradient(to right,cyan,magenta);
+	align-items: center;
+	padding: 20px 0px; 
+	margin-bottom: 50px;
+}
+.ConneSctio:hover{
+ background-image: linear-gradient(to right,black,green);
+ color: white;
+}
+.connected h3{ 
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+.connected h4{ 
+	font-size: 40px; 
+}
+.Conn-Btn{
+	background-color: red;
+	padding: 10px;
+	border-radius: 15px;
+	width: 180px; 
+    color: white; 
+    transition: 0.6s;
+}
+.Conn-Btn a {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+}
+
+.Conn-Btn:hover {
+	background-image: linear-gradient(to bottom,green,greenyellow);
+}
+
+
+
+/*SERVICE SECTION START*/
+
+.service {
+	text-align: center;
+}
+
+.service>h3{
+	font-size: 28px;
+	letter-spacing: 2px;
+}
+
+.service>hr{
+   margin-left: 650px;
+   width: 190px;
+   height: 10px; 
+   margin-bottom: 40px;
+   margin-top: 5px;
+   border-radius: 5px;
+   background-color: red;
+}
+.service-box{
+	background-color: #0E1422;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+	align-items: center;
+  
+}
+
+.service-box:hover{
+ background-image: linear-gradient(to bottom,red,blue);
+ color: black;
+}
+
+.service-box img{
+	 width: 100px; 
+}
+.service-container{ 
+	display: grid;
+	grid-template-columns: 400px 400px 400px;
+	grid-template-rows: 400px 400px;
+	grid-gap: 20px;
+	justify-content: center;
+}
+.service-box>h5{
+	margin-top: 30px;
+	font-size: 25px;
+}
+
+.service-box>h5:hover{
+	 color: red;
+	 cursor: cell;
+}
+
+
+/* HOW WE WORK SECTION START*/
+
+.How-we-work h3{
+	font-size: 28px;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.How-we-work>hr{
+   margin-left: 650px;
+   width: 190px;
+   height: 10px; 
+   margin-bottom: 40px;
+   margin-top: 5px;
+   border-radius: 5px;
+   background-color: red;
+}
+.How-Container{ 
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.how-box1{
+    height: 250px;
+    width: 250px;
+    border:2px solid black;
+    border-radius: 15px; 
+    border-right: 5px solid cyan;
+    border-bottom: 5px solid cyan;
+    position: relative;
+    margin-top: 90px;
+}
+
+.how-box1:hover{
+	background-color: black;
+	color: white;
+}
+.how-box2:hover{
+	background-color: black;
+	color: white;
+}
+
+
+.how-box2{
+   height: 250px;
+   width: 250px;
+   border:2px solid black;
+   border-radius: 15px; 
+   border-right: 5px solid magenta;
+   border-bottom: 5px solid magenta;
+   position: relative;
+}
+.how-num{
+	width: 50px;
+	height: 40px;
+	background-color: rgb(64, 0, 59);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius:10px 8px 23px 10px ;
+	position: relative;
+	left: 20px;
+	top: -20px;
+	z-index: 1;
+	font-size: 30px;
+
+}
+.how-text1{
+	padding: 50px 20px;
+	text-align: justify;
+}
+
+
+
+/* DIGITAL MARKETING SECTION START*/
+
+ .DigitMark{
+	display: flex;
+	justify-content: space-evenly;
+	background-image: linear-gradient(to right,cyan,magenta);
+	align-items: center;
+	padding: 20px 0px; 
+	margin-top: 50px; 
+}
+.DigitMark:hover{
+ background-image: linear-gradient(to right,black,green);
+ color: white;
+}
+
+.gigitCon h3{ 
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+.gigitCon span{
+	color: red;
+}
+
+.gigitCon h4{ 
+	font-size: 30px; 
+}
+.Conn-Btn{
+	background-color: red;
+	padding: 10px;
+	border-radius: 15px;
+	width: 180px; 
+    color: white; 
+    transition: 0.6s;
+}
+.Conn-Btn a {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+}
+
+.Conn-Btn:hover {
+	background-image: linear-gradient(to bottom,black,blue);
+}
+
+
+
+/*plan section*/
+
+.plan{
+	text-align: center;
+	margin:40px 0px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;  
+}
+
+.plan p{
+	font-size: 18px;
+	color: blue;
+}
+
+.plan hr{
+   margin-left: 165px;
+   width: 400px;
+   height: 10px; 
+   margin-bottom: 30px;
+   margin-top: 5px;
+   border-radius: 5px;
+   background-image: linear-gradient(to right,cyan,magenta); 
+}
+
+/*prising 3card section*/
+
+.prising-container{
+  display: flex;  
+}
+
+
+.pricing-card p{ 
+	font-size: 24px;
+	margin-top: 20px;
+}
+.pricleft{
+   margin-left: 150px;
+   margin-right: 25px;
+}
+.pricright{
+	margin-left: 25px;
+}
+.pricing-card h6{ 
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.pricing-card ul{  
+	margin-bottom: 40px;
+	text-align: left;
+	margin-left: 53px;
+}
+
+
+.pricing-card img{
+	width: 200px;
+
+}
+
+.pricing-card a{ 
+	padding: 10px 60px;
+	color: black;
+	text-decoration: none;
+	margin-top: 30px;
+	font-weight: 800;
+	width: 100px;
+	height: 50px; 
+	border-radius: 25px;
+	background-image: linear-gradient(to right,cyan,magenta);
+
+}
+
+
+.pricing-card { 
+	border-radius: 20px;
+	border:2px solid black;
+	width: 330px;
+	height: 550px; 
+	text-align: center;
+
+}
+
+.pricing-card:hover{
+  background-color: black;
+  color: white;
+}
+
+.neo{
+	height: 600px;
+	border: 5px solid black;
+	margin-top: -30px;
+   
+}
+
+.neo ul{
+  margin-top: 60px;
+  margin-bottom: 56px;
+}
+.neo h6{
+  margin-top: 20px;
+}
+
+
+
+/*CONTACT US SECTION START*/
+
+
+.contactus{
+	padding-top: 1px;
+	width: 100%;
+	height: 350px;
+	margin-top: 70px;
+	background-image: linear-gradient(to right bottom,magenta,cyan);
+}
+
+.contactus:hover{
+	 background-image: linear-gradient(to left bottom,magenta,cyan);
+}
+
+.contactus h1{
+	  margin-top: 30px;
+	  letter-spacing: 3px;
+	  text-align: center;
+	  font-size: 30px;
+	  color: rgb(97, 41, 93);
+}
+
+.contactus table{
+	margin: 40px auto;
+}
+
+.contactus input{
+	width: 270px;
+	height: 35px;
+	border-radius: 20px;
+
+}
+
+.firsRowinput .leftin{
+margin-right: 15px; 
+}
+
+.secondRowinput input{
+	margin-top: 10px;
+}
+
+.contactus .reach{
+   width: 147px;
+   height: 45px;
+   background-color: red;
+   margin: 20px auto;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 45px; 
+   
+}
+
+.contactus .reach a{
+ text-decoration: none;
+  color: white;
+}
+
+ .contactus ::placeholder{
+	padding-left: 13px;
+	color: red;
+}
+
+.reach:hover{
+	background-color: black;
+	color: white;
+}
+
+/*FOOTER SECTION START*/
+
+.footer{
+	width: 100%;
+	height: 100px;
+	background-color: rgb(17, 18, 31);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.iconContainer{
+	color: white;
+	display: flex;
+}
+.minBox{
+	width: 30px;
+	height: 30px;
+	border:3px solid grey;
+	text-align: center;
+	line-height: 30px; 
+	margin-right: 15px;
+}
+
+.minBox i{
+	color: red;
+}
+.minBox:hover{
+	background-color: white;
+
+}
